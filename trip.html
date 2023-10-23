@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1e1e1e;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #00ffe1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+  <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .center-aligned-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-aligned-text">
+      <h1 style="color:rgb(0, 115, 255)">FORM DESIGN</h1> 
+    </div>
+</body>
+</html>
+  
+  <a href="#"draggable="true" ondragstart="drag(event,'layout')">
+    <img src="icons8-layout-48.png" width="20"> Layout</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'layout')">
+    <img src="icons8-label-48.png" width="20"> Label</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Text Box')"><img src="icons8-text-input-form-48.png" width="20"> Text Box</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Button')"><img src="icons8-button-64.png" width="20"> Button</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Dropdown')"><img src="download (8).png" width="20"> Dropdown</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Check Box')"><img src="icons8-checkbox-48.png" width="20"> Check Box</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Radio button')"><img src="icons8-choice-67.png" width="20"> Radio button</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Table')"><img src="icons8-table-48.png" width="20"> Table</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Navigation')"><img src="icons8-navigation-48.png" width="20"> Navigation</a>
+  <a href="#"draggable="true" ondragstart="drag(event,'Image')"><img src="icons8-image-48 (1).png" width="20"> Image</a>
+</div>
+
+<head>
+  <style>
+      .modes-container {
+          position: relative;
+          width: 100%;
+          height: 60px;
+          padding: 10px,20px;
+
+      }
+
+      .publish-button, .preview-button {
+          position: absolute;
+          top: 15px;
+
+      }
+
+      .publish-button  {
+         color: #161414;
+         background-color: #f2f5f7;
+         width: 80px;
+         height: 40px;
+          right: 20px;
+      }
+
+
+      .preview-button {
+          color: #161414;
+         background-color: #f7f8f8;
+         width: 80px;
+         height:40px;
+          right:120px;
+      }
+      .publish-button:hover {
+          background-color: #f830fb;
+
+      }
+      .preview-button:hover {
+          background-color: #f628f3;
+
+      }
+
+  </style>
+</head>
+<body>
+  <div class="modes-container">
+      <button class="publish-button" onclick="switchMode('publish')">Publish</button>
+      <button class="preview-button" onclick="switchMode('preview')">Preview</button>
+       
+      <div class="publish-mode mode-content">
+          <h1></h1>
+          <p></p>
+      </div>
+
+      <div class="preview-mode mode-content">
+          <h1></h1>
+          <p></p>
+      </div>
+  </div>
+
+  <script>
+      function switchMode(mode) {
+          if (mode === 'publish') {
+              document.querySelector('.publish-mode').style.display = 'block';
+              document.querySelector('.preview-mode').style.display = 'none';
+          } else if (mode === 'preview') {
+              document.querySelector('.publish-mode').style.display = 'none';
+              document.querySelector('.preview-mode').style.display = 'block';
+          }
+      }
+
+      // Initial mode (you can set this to 'publish' or 'preview' as desired)
+      switchMode('publish');
+  
+  </script>
+</body>
+
+<html>
+  <head>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #ffffff;
+          font-family: Arial, sans-serif;
+        }
+    
+        .container {
+          position: relative;
+          width: 100%;
+          min-height: 85vh;
+        }
+    
+        .button-container {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        }
+    
+        .button-container button {
+          padding: 10px 20px;
+          margin: 5px;
+          background-color: #15d200;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+        }
+    
+        .button-container button.clear {
+          background-color: #ff0000;
+        }
+    
+        .button-container button:hover {
+          background-color: #000000;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="button-container">
+          <button class="clear">Clear</button>
+          <button class="save">Save</button>
+        </div>
+      </div>
+    </body>
+    </html>
+    </html>
+  
